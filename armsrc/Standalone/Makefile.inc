@@ -17,6 +17,10 @@ endif
 ifneq (,$(findstring WITH_STANDALONE_LF_HIDBRUTE,$(APP_CFLAGS)))
     SRC_STANDALONE = lf_hidbrute.c
 endif
+# WITH_STANDALONE_LF_DONRUN
+ifneq (,$(findstring WITH_STANDALONE_LF_DONRUN,$(APP_CFLAGS)))
+    SRC_STANDALONE = lf_donrun.c
+endif
 # WITH_STANDALONE_HF_YOUNG
 ifneq (,$(findstring WITH_STANDALONE_HF_YOUNG,$(APP_CFLAGS)))
     SRC_STANDALONE = hf_young.c

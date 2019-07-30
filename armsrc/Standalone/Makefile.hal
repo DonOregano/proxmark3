@@ -23,6 +23,9 @@ define KNOWN_STANDALONE_DEFINITIONS
 | LF_HIDBRUTE     | HID corporate 1000 bruteforce          |
 |                 | - Federico dotta & Maurizio Agazzini   |
 +----------------------------------------------------------+
+| LF_DONRUN       | EM410x Mode                            |
+|                 | - DonOregano                           |
++----------------------------------------------------------+
 | HF_YOUNG        | Mifare sniff/simulation                |
 |                 | - Craig Young                          |
 +----------------------------------------------------------+
@@ -38,7 +41,7 @@ define KNOWN_STANDALONE_DEFINITIONS
 
 endef
 
-STANDALONE_MODES := LF_SAMYRUN LF_ICERUN LF_PROXBRUTE LF_HIDBRUTE
+STANDALONE_MODES := LF_SAMYRUN LF_ICERUN LF_PROXBRUTE LF_HIDBRUTE LF_DONRUN
 STANDALONE_MODES += HF_YOUNG HF_MATTYRUN HF_COLIN HF_BOG
 STANDALONE_MODES_REQ_SMARTCARD :=
 STANDALONE_MODES_REQ_FLASH := HF_COLIN HF_BOG
